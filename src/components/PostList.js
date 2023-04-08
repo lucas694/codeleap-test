@@ -23,7 +23,7 @@ export const PostList = () => {
 
   return (
     <div>
-      {postStatus === 'loading' && <div>Loading posts...</div>}
+      {postStatus === 'loading' && <div className={"LoadingMsg"}>Loading posts...</div>}
       {postStatus === 'succeeded' && (
         <div>
           <div className={"PostListBtnControl"}>
