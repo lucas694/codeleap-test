@@ -4,6 +4,7 @@ import { useState } from "react";
 import { useDispatch } from "react-redux";
 import {createPost} from "../redux/actions/createPostSlice";
 import {useSelector} from "react-redux";
+import {fetchPosts} from "../redux/actions/postsSlice";
 
 const CreatePost = () => {
   const [title, setTitle] = useState("");
@@ -21,6 +22,7 @@ const CreatePost = () => {
         .then(() => {
           setTitle('');
           setContent('');
+          dispatch(fetchPosts());
         })
         .catch((err) => {
           setError(err.message);

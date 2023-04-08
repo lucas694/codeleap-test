@@ -27,9 +27,11 @@ export const PostList = () => {
       {postStatus === 'succeeded' && (
         <div>
           <div className={"PostListBtnControl"}>
-            <span className={"UpdateSpan"}>Update</span>
-            <button onClick={() => {setPollingInterval(120000); dispatch(fetchPosts())}}>
-              <AiOutlineReload className={"BtnReloud"}/>
+            <button onClick={() => {setPollingInterval(120000); dispatch(fetchPosts())}}
+                    className={"BtnUploadList"}
+            >
+              <span className={"UpdateSpan"}>Update</span>
+              <AiOutlineReload className={"BtnReloadIcon"}/>
             </button>
           </div>
           {posts && posts.length > 0 ? (

@@ -1,12 +1,18 @@
 .PostListBtnControl{
     @apply w-full flex flex-row justify-end mt-5 items-center
 }
+.BtnUploadList{
+    @apply flex flex-row items-center cursor-pointer
+}
+.BtnUploadList:hover .BtnReloadIcon{
+    @apply rotate-180 opacity-80
+}
 .LoadingMsg{
     @apply flex items-center justify-center w-full text-[#7695EC] font-bold text-sm mt-4
 }
-.BtnReloud{
-    @apply w-8 h-8 fill-[#7695EC] cursor-pointer
-    hover:rotate-180 transition-transform duration-1000 ease-in-out hover:opacity-80
+.BtnReloadIcon{
+    @apply w-8 h-8 fill-[#7695EC] transition-transform duration-1000 ease-in-out
+
 }
 .UpdateSpan{
     @apply text-[#7695EC] font-bold text-sm mr-1

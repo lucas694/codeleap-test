@@ -13,8 +13,10 @@ const SignUp = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    dispatch(setUsername(userName));  // dispatch para username
-    navigate("/MainScreen");
+    if (userName) {
+      dispatch(setUsername(userName));
+      navigate("/MainScreen");
+    }
   };
   return(
     <div className={"SignUpContainer"}>
@@ -35,6 +37,7 @@ const SignUp = () => {
           <BtnBase className={userName ? "BtnBlue uppercase": "BtnDisabled uppercase"}
                    children={"Enter"}
                    onClick={handleSubmit}
+                   disabled={!userName}
           />
         </div>
       </div>

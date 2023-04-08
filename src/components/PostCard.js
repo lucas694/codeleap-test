@@ -7,6 +7,7 @@ import { updatePost } from "../redux/actions/createPostSlice";
 import {useState} from "react";
 import Modal from 'react-modal';
 import BtnBase from "./Buttons/BtnBase";
+import { fetchPosts } from "../redux/actions/postsSlice"
 
 Modal.setAppElement('#root');
 
@@ -40,14 +41,15 @@ const PostCard = (props) => {
 
   {/*Dispath Deletar*/}
   const dispatch = useDispatch();
-  const handleDelete = () => {
-    dispatch(deletePost(postId));
-    setModalDeleteIsOpen(false);
+  const handleDelete = async () => {
+    await dispatch(deletePost(postId));
+    await dispatch(fetchPosts());
   };
 
   {/*Dispath Editar*/}
-  function handleUpdate() {
-    dispatch(updatePost({postId, postData: {title: editTitle, content: editContent}}));
+  async function handleUpdate() {
+    await dispatch(updatePost({postId, postData: {title: editTitle, content: editContent}}));
+    dispatch(fetchPosts());
     setModalEditIsOpen(false);
   };
 
