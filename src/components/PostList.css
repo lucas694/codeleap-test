@@ -1,0 +1,10 @@
+.PostListBtnControl{
+    @apply w-full flex flex-row justify-end mt-5 items-center
+}
+.BtnReloud{
+    @apply w-8 h-8 fill-[#7695EC] cursor-pointer
+    hover:rotate-180 transition-transform duration-1000 ease-in-out hover:opacity-80
+}
+.UpdateSpan{
+    @apply text-[#7695EC] font-bold text-sm mr-1
+}

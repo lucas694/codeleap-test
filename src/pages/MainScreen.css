@@ -1,0 +1,47 @@
+.MainScreenContainer{
+    @apply flex flex-col items-center justify-center w-full h-screen bg-[#DDDDDD];
+}
+.MainScreenContent{
+    @apply flex flex-col items-center w-[100%] h-full bg-[#FFFFFF]
+    overflow-y-auto
+    lg:w-1/2
+}
+.MainScreenWelcome{
+    @apply w-full p-5 bg-[#7695EC] flex flex-row items-center justify-between
+}
+.MainScreenTitle{
+    @apply text-xl font-medium text-start text-[#FFFFFF]
+    md:text-2xl
+}
+.MainScreenPostsContent{
+    @apply flex flex-col w-full h-full px-5 text-start
+}
+
+/*Logout*/
+.MainScreenLogoutContainer{
+    @apply flex flex-row items-center justify-center
+}
+.MainScreenLogoutContent{
+    @apply flex flex-row items-center justify-center w-full h-10
+}
+.LogoutMainInfs{
+    @apply flex flex-row items-center justify-center
+}
+.MainScreenLogoutText{
+    @apply text-sm font-medium text-[#FFFFFF] mr-2
+    sm:text-base sm:mr-3
+}
+
+.UserLogoutIcon{
+    @apply w-5 h-5 fill-[#FFFFFF]
+    sm:w-6 sm:h-6
+}
+.ArrowLogoutIcon{
+    @apply w-6 h-6 fill-[#FFFFFF] mr-1
+    sm:w-7 sm:h-7
+}
+.OffLogoutIcon{
+    @apply w-6 h-6 fill-[#FFFFFF] mr-1 cursor-pointer
+    transition-all duration-300 ease-in-out
+    sm:w-7 sm:h-7 hover:fill-red-400
+}

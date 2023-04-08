@@ -1,0 +1,41 @@
+.PostCardContainer{
+    @apply flex flex-col border border-[#999999] rounded-2xl mt-5 overflow-hidden
+}
+.PostCardHeader{
+    @apply flex flex-row items-center bg-[#7695EC] p-3 justify-between
+    sm:p-4
+}
+.PostCardTitle{
+    @apply text-lg font-semibold text-start text-[#FFFFFF]
+    sm:text-xl
+}
+.PostCardHeaderBtnControl{
+    @apply flex flex-row items-center space-x-4
+}
+.PostCardDeleteIcon{
+    @apply w-7 h-7 text-[#FFFFFF]
+}
+.PostCardEditIcon{
+    @apply w-6 h-6 text-[#FFFFFF]
+}
+
+
+.PostCardContent{
+    @apply flex flex-col p-5 items-start w-full
+    sm:p-6
+}
+.PostCardData{
+    @apply flex flex-row w-full justify-between
+}
+.PostCardUsername{
+    @apply text-sm font-medium text-[#777777]
+    sm:text-base
+}
+.PostCardHour{
+    @apply text-sm font-normal text-[#777777]
+    sm:text-base
+}
+.PostCardText{
+    @apply text-sm font-medium text-[#1C2129] mt-4 w-full
+    sm:text-base
+}

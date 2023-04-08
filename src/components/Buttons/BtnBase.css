@@ -1,0 +1,22 @@
+.BtnBase{
+    @apply rounded-lg px-8 py-1 text-sm font-medium border
+    transition-all ease-in-out delay-150 hover:-translate-y-1 hover:scale-105
+}
+.BtnWhiteDefault{
+    @apply bg-[#FFFFFF] text-[#1C2129] border-[#1C2129]
+}
+.BtnBlue{
+    @apply bg-[#7695EC] text-white border-[#7695EC]
+
+}
+.BtnDelete{
+    @apply bg-[#FF5151] text-white border-[#FF5151]
+}
+.BtnSave{
+    @apply bg-[#47B960] text-white border-[#47B960]
+}
+
+.BtnDisabled {
+    @apply bg-[#CCCCCC] text-white border-[#777777] cursor-not-allowed
+    hover:scale-100 hover:-translate-y-0
+}

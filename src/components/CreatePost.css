@@ -1,0 +1,19 @@
+.CreatePostContainer{
+    @apply flex flex-col p-5 border border-[#999999] rounded-2xl mt-5
+    md:p-6
+}
+
+.CreatePostTitle{
+    @apply text-xl font-bold text-start text-[#000000]
+}
+.CreatePostLabel{
+    @apply flex flex-col items-start mt-2 text-base font-medium text-[#1C2129] w-full
+    md:mt-4
+}
+.CreatePostInput-TextArea{
+    @apply mt-1
+}
+.CreatePostBtnControl{
+    @apply flex flex-col justify-end mt-4
+    sm:flex-row
+}
